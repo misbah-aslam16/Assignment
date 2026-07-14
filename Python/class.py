@@ -14,18 +14,18 @@ import random;
 #   4. Calculates the final price after the discount.
 #   5. Prints the total, discount amount, and final price.
 
-# rice_price =  350 
-# oil_price = 480
-# sugar_price = 120
+rice_price =  350 
+oil_price = 480
+sugar_price = 120
 
-# total_cost = rice_price + oil_price  + sugar_price
-# print( "Total Price", total_cost)
+total_cost = rice_price + oil_price  + sugar_price
+print( "Total Price", total_cost)
 
-# discount_price =  total_cost * 0.10 
-# print( "Discount Price", discount_price)
+discount_price =  total_cost * 0.10 
+print( "Discount Price", discount_price)
 
-# final_price =  total_cost - discount_price
-# print( "Final Price", final_price)
+final_price =  total_cost - discount_price
+print( "Final Price", final_price)
 
 
 # ─────────────────────────────────────────────
@@ -38,9 +38,9 @@ import random;
 #
 # Remember: input() returns a string — convert it to int first!
 
-# birth_year = int(input("Enter your birth year:"))
-# year_count = 2024 - birth_year
-# print("You are approximately " + str(year_count) + " years old.")
+birth_year = int(input("Enter your birth year:"))
+year_count = 2024 - birth_year
+print("You are approximately " + str(year_count) + " years old.")
 
 # ─────────────────────────────────────────────
 # QUESTION 4 — if / elif / else
@@ -53,17 +53,17 @@ import random;
 #   temperature 15-24 → "It's a bit cool. Consider a jacket."
 #   temperature < 15  → "It's cold! Wear a warm coat."
 
-# current_temp = int(input("Enter current temperature: "))
-# if current_temp > 35:
-#  print("It's very hot! Wear light clothes.")
-# elif current_temp >= 25:
-#  print("It's warm. A t-shirt is fine.")
-# elif current_temp >= 15:
-#  print("It's a bit cool. Consider a jacket.")
-# elif current_temp < 15:
-#  print("It's cold! Wear a warm coat.")
-# else:
-#   print("sorry!")
+current_temp = int(input("Enter current temperature: "))
+if current_temp > 35:
+ print("It's very hot! Wear light clothes.")
+elif current_temp >= 25:
+ print("It's warm. A t-shirt is fine.")
+elif current_temp >= 15:
+ print("It's a bit cool. Consider a jacket.")
+elif current_temp < 15:
+ print("It's cold! Wear a warm coat.")
+else:
+  print("sorry!")
 
 # ─────────────────────────────────────────────
 # QUESTION 5 — if / elif / else (Grade Calculator)
@@ -79,25 +79,25 @@ import random;
 #   3. Also print "Congratulations!" if the student passed (marks >= 50).
 #      Print "Better luck next time." if the student failed.
 
-# marks = int(input("Enter your marks out of 100: "))
+marks = int(input("Enter your marks out of 100: "))
 
-# if marks >= 50:
-#     print("Congratulations!")
-# else :
-#     print("Better luck next time.")
+if marks >= 50:
+    print("Congratulations!")
+else :
+    print("Better luck next time.")
 
-# if marks >= 90:
-#     print("Grade: A, Excellent")           
-# elif marks >= 75:
-#     print("Grade: B, Good") 
-# elif marks >= 60:
-#     print("Grade: C,  Average")    
-# elif marks >= 60:
-#     print("Grade: D, Below Average") 
-# elif marks >= 0:
-#     print("Grade: F, Fail") 
-# else:
-#     print("Invalid Number")
+if marks >= 90:
+    print("Grade: A, Excellent")           
+elif marks >= 75:
+    print("Grade: B, Good") 
+elif marks >= 60:
+    print("Grade: C,  Average")    
+elif marks >= 60:
+    print("Grade: D, Below Average") 
+elif marks >= 0:
+    print("Grade: F, Fail") 
+else:
+    print("Invalid Number")
 
 # ─────────────────────────────────────────────
 # QUESTION 6 — for Loop
@@ -112,9 +112,9 @@ import random;
 #   ...
 #   7 x 10 = 70
 
-# num = int(input("Enter any number "))
-# for i in range(1, 11):
-#     print(num, "x", i, "=", num * i)
+num = int(input("Enter any number "))
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
 
 # ─────────────────────────────────────────────
 # QUESTION 7 — for Loop + List
@@ -133,13 +133,13 @@ import random;
 #   45 → Fail
 #   ...
 
-# scores = [72, 88, 45, 95, 60, 53, 78, 91, 40, 85]
+scores = [72, 88, 45, 95, 60, 53, 78, 91, 40, 85]
 
-# for score in scores:
-#      if score >= 50:
-#          print(score, "→ Pass")
-#      else:
-#          print(score, "→ Fail")
+for score in scores:
+     if score >= 50:
+         print(score, "→ Pass")
+     else:
+         print(score, "→ Fail")
 
 # ─────────────────────────────────────────────
 # QUESTION 8 — while Loop
@@ -155,18 +155,18 @@ import random;
 #        "Correct! You got it in X tries."
 #      (where X is how many attempts they made)
 
-# secret_num = random.randint(1,100)
-# tries = 0
+secret_num = random.randint(1,100)
+tries = 0
 
-# while True:
-#     guess_num = int(input("Guess the secret number: "))
-#     tries += 1
-#     if guess_num == secret_num:
-#       print("Correct! You got it in " + str(tries) + " tries.")
-#     elif guess_num > secret_num:
-#      print("Too high! Try again.")
-#     elif guess_num < secret_num: 
-#       print( "Too low! Try again.")
+while True:
+    guess_num = int(input("Guess the secret number: "))
+    tries += 1
+    if guess_num == secret_num:
+      print("Correct! You got it in " + str(tries) + " tries.")
+    elif guess_num > secret_num:
+     print("Too high! Try again.")
+    elif guess_num < secret_num: 
+      print( "Too low! Try again.")
 
 
 # ─────────────────────────────────────────────
@@ -178,6 +178,7 @@ import random;
 #   - Takes one number as input.
 #   - Returns True if the number is even, False if it is odd.
 #
+
 # Function 2: celsius_to_fahrenheit(celsius)
 #   - Takes a temperature in Celsius.
 #   - Returns the temperature in Fahrenheit.
@@ -187,6 +188,32 @@ import random;
 #   - Ask the user to enter a number and print whether it is even or odd.
 #   - Ask the user to enter a Celsius temperature and print the Fahrenheit value.
 
+# Function 1
+
+def is_even(number):
+   return number % 2 == 0
+
+
+# Function 2
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9 / 5) + 32
+
+
+# Ask the user for a number
+number = int(input("Enter a number: "))
+
+if is_even(number):
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+
+
+# Ask the user for a Celsius temperature
+celsius = float(input("Enter temperature in Celsius: "))
+
+fahrenheit = celsius_to_fahrenheit(celsius)
+
+print(f"{celsius}°C = {fahrenheit}°F")
 
 # ─────────────────────────────────────────────
 # QUESTION 10 — Lists + Functions (Putting it all together)
@@ -209,3 +236,28 @@ import random;
 #   Average Score : 70.7
 #   Passed        : 8
 #   Failed        : 2
+
+# Function to analyse scores
+def analyse_scores(scores):
+    result = {
+        "highest": max(scores),
+        "lowest": min(scores),
+        "average": round(sum(scores) / len(scores), 2),
+        "passed": len([score for score in scores if score >= 50]),
+        "failed": len([score for score in scores if score < 50])
+    }
+    return result
+
+
+# List of scores
+scores = [72, 88, 45, 95, 60, 53, 78, 91, 40, 85]
+
+# Call the function
+results = analyse_scores(scores)
+
+# Print the results
+print("Highest Score :", results["highest"])
+print("Lowest Score  :", results["lowest"])
+print("Average Score :", results["average"])
+print("Passed        :", results["passed"])
+print("Failed        :", results["failed"])
